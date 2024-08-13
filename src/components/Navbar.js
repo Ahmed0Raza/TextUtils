@@ -18,9 +18,9 @@ export default function Navbar(props) {
               <Link className="navbar-brand mx-2 " to="/about">{props.about}</Link>
             </li>
           </ul>
-          <div className="d-flex">
+          {/* <div className="d-flex">
                 <div className="bg-primary rounded mx-2" onClick={()=>{props.toggleHandle('primary')}} style={{height:'30px',width:'30px' }}></div>
-              </div>
+              </div> */}
           <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
             <input className="form-check-input" onClick={props.toggleHandle} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.modetext}</label>
